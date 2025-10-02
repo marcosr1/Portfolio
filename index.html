@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Marcos Richelly</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="topolinks">
+        <a href="https://www.instagram.com/_chellynk/"> Instagram</a>
+        <a href="https://www.linkedin.com/in/marcos-richelly-6bb536336/">Linkedin</a>
+        <a href="https://github.com/marcosr1">Github</a>
+    </div>
+
+    
+    <div class="apresent">
+        <div id="typewriter">
+            <p>Oi! eu sou o</p>
+            <h1 class="amarelo" id="primeiro"></h1> <h1 id="segundo"></h1>
+        </div>
+        <p>Estudante de Ciência da Computação.</p>
+        <p>Estou sempre criando coisas com o teclado.</p>
+    </div>
+    <div id="bola"></div>
+    
+    <section class="reveal">
+        <div class="sobre">
+            <h2>Sobre mim:</h2>
+            <p>Sempre gostei de tecnologia, e me apaixonei por programação.</p>
+            <p>Busco fazer a diferença com meu conhecimento.</p>
+            <p>Sempre estou aprendendo algo.</p>
+        </div>
+    </section>
+
+    <section class="reveal">
+        <div class="pretensao">
+            <h2>O que que quero:</h2>
+            <p>Quero ser um engenheiro de software experiente e versátil</p>
+        </div>
+    </section>
+
+    <section class="reveal">
+        <div class="feito">
+            <h3>O que ja fiz:</h3>
+            <p>Apenas projetos pessoais para incluir no portifólio como:</p>
+        </div>
+    </section>
+
+    <section class="reveal">
+        <div class="card">
+            <a href="https://sitecatalogo.onrender.com/">
+            <h3>Site Catálogo</h3>
+            <p>Um catálogo que fiz para minha loja de impressões 3D</p>
+            <p class="juntar">Utilizando</p><p class="amarelo">Flask</p><p class="juntar">,</p> <p class="amarelo">Html</p><p class="juntar">,</p><p class="amarelo">CSS</p><p class="juntar"> e </p><p class="amarelo">Mysql</p>
+            </a>
+        </div>
+    </section>
+
+        <footer>
+            <div class="rodape">
+                <p>Criado por Marcos Richelly ||</p>
+                <p>&copy; <span id="ano"></span>Obrigado por olhar ❤️</p>
+            </div> 
+        </footer>
+</body>
+
+<script>
+function animarScroll() {
+  const elementos = document.querySelectorAll(".reveal");
+
+  elementos.forEach(el => {
+    const posicao = el.getBoundingClientRect();
+
+    // Se o elemento está dentro da área visível da tela → mostra
+    if (posicao.top < window.innerHeight - 100 && posicao.bottom > 100) {
+      el.classList.add("visivel");
+    } else {
+      // Se sair da área visível → esconde de novo
+      el.classList.remove("visivel");
+    }
+  });
+}
+
+window.addEventListener("scroll", animarScroll);
+animarScroll();
+</script>
+<script>
+const primeiroEl = document.getElementById("primeiro");
+const segundoEl = document.getElementById("segundo");
+
+const primeiroNome = "Marcos";
+const segundoNome = "Richelly";
+
+let i = 0;
+let j = 0;
+let escrevendoPrimeiro = true;
+
+function type() {
+  if (escrevendoPrimeiro) {
+    if (i < primeiroNome.length) {
+      primeiroEl.textContent += primeiroNome.charAt(i);
+      i++;
+      setTimeout(type, 120);
+    } else {
+      setTimeout(() => { escrevendoPrimeiro = false; type(); }, 100);
+    }
+  } else {
+    if (j < segundoNome.length) {
+      segundoEl.textContent += segundoNome.charAt(j);
+      j++;
+      setTimeout(type, 120);
+    }
+  }
+}
+
+type();
+</script>

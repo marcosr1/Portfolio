@@ -1,0 +1,104 @@
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+}
+body {
+    background-color: #1C1C1C;
+    font-family: 'Nimbus Mono', monospace;
+    color: #fff;  
+    margin-top: 20px;
+    overflow-y: scroll;
+}
+.topolinks {
+    text-align: center;
+}
+.topolinks a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.topolinks a:hover {
+    color: #ffaa00;
+    text-decoration: underline;
+}
+
+.apresent {
+    margin-top: 380px;
+    margin-bottom: 550px;
+    text-align: center;
+}
+.apresent h1{
+    display: inline-block;
+    margin: 0 10px;
+}
+.apresent p {
+    margin: 0;
+}
+
+.juntar { 
+    display: inline-block;
+    margin: 0px 10px;
+}
+.amarelo {
+    display: inline-block;
+    color: #ffaa00;
+}
+
+.sobre {
+    margin-left: 550px;
+    margin-bottom: 60px;
+    text-align: left;
+}
+.sobre1 h2 {
+    margin-bottom: 60px;
+}
+.sobre1 p {
+    margin-top: 10px;
+}
+
+.pretensao {
+    text-align: left;
+    margin-left: 550px;
+    margin-bottom: 60px;
+}
+
+.feito {
+    text-align: left;
+    margin-left: 550px;
+    margin-bottom: 60px;
+}
+.card { 
+    width: 400px;
+    border-radius: 24px;
+    text-align: left;
+    margin-left: 530px;
+    padding: 20px;
+    transition: background 0.3s ease;
+}
+.card a {
+    color: #fff;
+    text-decoration: none;
+}
+.card a:hover {
+    color: #ffaa00;
+}
+.card:hover {
+    background-color: #3A3A3A;
+}
+
+.rodape {
+    margin-top: 100px;
+    text-align: center;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.8s ease-out;
+}
+
+.reveal.visivel {
+  opacity: 1;
+  transform: translateY(0);
+}
