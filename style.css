@@ -46,10 +46,9 @@ body {
     color: #ffaa00;
 }
 
-.sobre {
-    margin-left: 550px;
+.sobre { 
     margin-bottom: 60px;
-    text-align: left;
+    text-align: center;
 }
 .sobre1 h2 {
     margin-bottom: 60px;
@@ -59,21 +58,20 @@ body {
 }
 
 .pretensao {
-    text-align: left;
-    margin-left: 550px;
+    text-align: center;
     margin-bottom: 60px;
 }
 
 .feito {
-    text-align: left;
-    margin-left: 550px;
+    text-align: center;
     margin-bottom: 60px;
 }
 .card { 
     width: 400px;
     border-radius: 24px;
-    text-align: left;
-    margin-left: 530px;
+    margin-left: 600px;
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     transition: background 0.3s ease;
 }
